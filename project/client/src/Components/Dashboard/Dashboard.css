@@ -1,0 +1,131 @@
+.navbar{
+    display: flex;
+}
+.logo_img{
+    width: 100%;
+    text-align: center;
+}
+.drawer_collection{
+    background-color: #0277bd ;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.display_statistic_chart{
+    display: grid;
+    place-content: center;
+}
+.statistic_chart{
+    margin-top: 50px;
+    display: grid;
+    place-content: center;
+    background-color: #e8eaf6;
+    border-radius: 30px 0px 30px 30px;
+}
+#paper_total{
+    height: 9rem;
+    width: 10rem;
+    display: grid;
+    place-content: center;
+    background-color: #7b1fa2;
+    color:white;
+    border-radius: 30px 0px 30px 30px;
+    cursor: pointer;
+    margin: 10px;
+}
+#paper_owe{
+    height: 9rem;
+    width: 10rem;
+    display: grid;
+    place-content: center;
+    background-color: #d32f2f;
+    color:white;
+    cursor: pointer;
+    border-radius: 30px 0px 30px 30px;
+    margin: 10px;
+}
+#paper_owed{
+    height: 9rem;
+    width: 10rem;
+    display: grid;
+    place-content: center;
+    background-color: #388e3c;
+    color:white;
+    cursor: pointer;
+    border-radius: 30px 0px 30px 30px;
+    margin: 10px;
+}
+
+.item_card{
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+.item_card_amount{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Varela Round'
+}
+.outer_box_control_btn{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+.inner_box_control_btn{
+    margin: 2px 20px 10px 0px;
+}
+#accordion{
+    background-color: #0277bd;
+    color:white
+}
+#accordion_back{
+    background-color: #388e3c;
+    color:white
+}
+#accordion_give{
+    background-color: #d32f2f;
+    color: white;
+}
+.accordion_summary{
+    background-color: #e1f5fe;
+    color:black
+}
+.accordion_back_summary{
+    background-color: #ffebee;
+    color:black
+}
+.accordion_give_summary{
+    background-color: #e8f5e9;
+    color:black
+}
+.drawer_footer{
+    position: sticky;
+    bottom:0;
+    width: 100%;
+}
+
+@media (max-width:500px) {
+    #paper_total{
+        height: 6rem;
+        width: 15rem;
+        border-radius: 2rem 0rem 2rem 0rem;
+    }
+    #paper_owe{
+        height: 4rem;
+        width: 9rem;
+        border-radius: 1.5rem 0rem 1.5rem 0rem;
+    }
+    #paper_owed{
+        height: 4rem;
+        width: 9rem;
+        border-radius: 1.5rem 0rem 1.5rem 0rem;
+    } 
+    .statistic_chart{
+        border-radius: 2rem 0rem 2rem 0rem;
+    }
+    .drawer_collection{
+        text-align: left;
+    }
+}
