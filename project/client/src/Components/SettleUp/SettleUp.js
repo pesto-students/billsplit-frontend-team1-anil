@@ -13,10 +13,11 @@ import './SettleUp.css';
 
 const useStyles = makeStyles(()=>({
   btn:{
-    backgroundColor:'white',
+    backgroundColor:'#388e3c',
+    color:'white',
     '&:hover':{
-      backgroundColor:'#388e3c',
-      color:'white',
+      backgroundColor:'#1b5e20',
+      color:'white'
     }
   }
 }))

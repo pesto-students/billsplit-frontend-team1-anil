@@ -12,12 +12,11 @@ import './AddExpense.css';
 
 const useStyles = makeStyles(()=>({
   btn:{
-    backgroundColor:'white',
-    color:'black',
+    backgroundColor:'#0277BD',
+    color:'white',
     '&:hover':{
-      backgroundColor:'#0277bd',
+      backgroundColor:'#01579b',
       color:'white',
-      transitionDuration:'0.7s'
     }
   }
 }))

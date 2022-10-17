@@ -1,131 +1,191 @@
+
+#root{
+    background-color: #e0e0e0;
+}
 .navbar{
     display: flex;
+}
+.logo{
+    width:200px
 }
 .logo_img{
     width: 100%;
     text-align: center;
 }
+.grid_container{
+    display: grid;
+    padding: 10px;
+    margin-top: 70px;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    'amount_chart amount_chart amount_chart amount_chart'
+    'chart info_card info_card info_card'
+    'chart info_card info_card info_card';
+}
 .drawer_collection{
-    background-color: #0277bd ;
+    background-color: #039be5 ;
     color: white;
     padding: 10px;
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
 }
 .display_statistic_chart{
-    display: grid;
-    place-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    grid-area: amount_chart;
 }
 .statistic_chart{
-    margin-top: 50px;
     display: grid;
-    place-content: center;
-    background-color: #e8eaf6;
-    border-radius: 30px 0px 30px 30px;
+    place-self: center;
 }
-#paper_total{
-    height: 9rem;
-    width: 10rem;
-    display: grid;
-    place-content: center;
-    background-color: #7b1fa2;
-    color:white;
-    border-radius: 30px 0px 30px 30px;
-    cursor: pointer;
-    margin: 10px;
+.control_btn{
+    background-color: white;
+    grid-area: control_btn;
+    border-radius: 5px;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-#paper_owe{
-    height: 9rem;
-    width: 10rem;
-    display: grid;
-    place-content: center;
-    background-color: #d32f2f;
-    color:white;
-    cursor: pointer;
-    border-radius: 30px 0px 30px 30px;
-    margin: 10px;
-}
-#paper_owed{
-    height: 9rem;
-    width: 10rem;
-    display: grid;
-    place-content: center;
-    background-color: #388e3c;
-    color:white;
-    cursor: pointer;
-    border-radius: 30px 0px 30px 30px;
-    margin: 10px;
+.outer_box_control_btn{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
 }
 
-.item_card{
-    display: grid;
-    place-content: center;
+.btn_img{
+    display: block;
     text-align: center;
+    width: 8rem;
+    margin: 0px;
+}
+.control_btn_img{
+    width: 50%;
+}
+.information_card{
+    grid-area: info_card;
+}
+.chart{
+    cursor: pointer;
+    grid-area: chart;
+    display: grid;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    place-content: center;
+    padding: 10px;
+    height: fit-content;
+    background-color: white;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+}
+.chart_wheel{
+    height: 100px;
+}
+.rupee_img{
+    height: 20px;
+}
+.item_card{
+    background-color: aqua;
+}
+
+.money_img{
+    border-radius: 10px;
+    padding: 5px;
+    height: 70px;
+    margin-left: 0;
+    padding-left: 0;
+    box-shadow: 2px 2px 2px 2px purple;
 }
 .item_card_amount{
     font-size: 30px;
     font-weight: 700;
     font-family: 'Varela Round'
 }
-.outer_box_control_btn{
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-    align-items: center;
-}
-.inner_box_control_btn{
-    margin: 2px 20px 10px 0px;
-}
+
 #accordion{
-    background-color: #0277bd;
-    color:white
+    
 }
 #accordion_back{
-    background-color: #388e3c;
-    color:white
+    
 }
 #accordion_give{
-    background-color: #d32f2f;
-    color: white;
+    
 }
 .accordion_summary{
-    background-color: #e1f5fe;
-    color:black
+    
 }
 .accordion_back_summary{
-    background-color: #ffebee;
-    color:black
+    
 }
 .accordion_give_summary{
-    background-color: #e8f5e9;
-    color:black
+    
 }
 .drawer_footer{
     position: sticky;
     bottom:0;
     width: 100%;
 }
+.custom-shape-divider-bottom-1665261800 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+    line-height: 0;
+    transform: rotate(180deg);
+}
 
-@media (max-width:500px) {
-    #paper_total{
-        height: 6rem;
-        width: 15rem;
-        border-radius: 2rem 0rem 2rem 0rem;
+.custom-shape-divider-bottom-1665261800 svg {
+    position: relative;
+    display: block;
+    width: calc(206% + 1.3px);
+    height: 64px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1665261800 .shape-fill {
+    fill: #0277bd;
+}
+
+@media (max-width:900px) {
+    .grid_container{
+        justify-content: center;
+        justify-items: center;
+        grid-template-columns: auto;
+        grid-template-areas:
+        'amount_chart'
+        'chart'
+        'info_card';
     }
-    #paper_owe{
-        height: 4rem;
-        width: 9rem;
-        border-radius: 1.5rem 0rem 1.5rem 0rem;
+    
+    .display_statistic_chart{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        grid-area: amount_chart;
     }
-    #paper_owed{
-        height: 4rem;
-        width: 9rem;
-        border-radius: 1.5rem 0rem 1.5rem 0rem;
-    } 
     .statistic_chart{
         border-radius: 2rem 0rem 2rem 0rem;
+        width: 140px;
+        justify-content: center;
     }
     .drawer_collection{
         text-align: left;
     }
+    .outer_box_control_btn{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        width: 50%;
+    }
+    
 }

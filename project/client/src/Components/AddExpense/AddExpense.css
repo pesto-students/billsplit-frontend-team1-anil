@@ -17,3 +17,9 @@
 .description_block{
     display: flex;
 }
+@media (max-width:900px) {
+    .MuiButton{
+        padding: 7px 9px;
+        font-size: 0.6rem;
+    }
+}
