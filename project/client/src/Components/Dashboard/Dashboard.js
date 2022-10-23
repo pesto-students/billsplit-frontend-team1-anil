@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import clsx from 'clsx';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
@@ -176,6 +176,9 @@ export default function Dashboard() {
   const handleDrawerClose = () => {
     setOpen(false);
   };
+  useEffect(()=>{
+    setExpanded("panel4")
+  },[]);
 
   return (
     <div className={classes.root}>
@@ -261,17 +264,12 @@ export default function Dashboard() {
                     <AmountCard color="#D32F2F" icon1={Give} icon2={Rupees} title="Give Back" amount="500" />
                   </div>
                   <div className="control_btn">
-                      <div className="btn_img">
-                        <img className="control_btn_img" src={Payment} alt="expense_img" />
-                      </div>
-                      <div className="outer_box_control_btn">
                         <div className="inner_box_control_btn">
-                            <AddExpense/>
+                            <AddExpense className={classes.addexpense}/>
                         </div>
                         <div className="inner_box_control_btn ">
-                            <SettleUp/>
+                            <SettleUp className="settleup"/>
                         </div>
-                      </div>
                   </div>
           </div>
           <div className="chart"  onClick={()=>handleClick('panel4')}>

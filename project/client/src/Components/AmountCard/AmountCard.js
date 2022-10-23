@@ -5,6 +5,12 @@ import classes from './Amountcard.module.css';
 const success = "#388e3c";
 const danger = "#d32f2f";
 
+async function fetchData(){
+    const ref = await fetch("/usergroup",{
+        method:"GET"
+    })
+}
+
 function checkAmount(amount,color,title){
     const slice = amount.slice(0,1);
     if(slice==='+' || slice==="-"){

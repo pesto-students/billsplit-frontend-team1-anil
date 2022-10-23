@@ -1,6 +1,5 @@
 
 #root{
-    background-color: #e0e0e0;
 }
 .navbar{
     display: flex;
@@ -12,12 +11,13 @@
     width: 100%;
     text-align: center;
 }
+
 .grid_container{
     display: grid;
     padding: 10px;
     margin-top: 70px;
     grid-gap: 10px;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto auto;
     grid-template-areas: 
     'amount_chart amount_chart amount_chart amount_chart'
@@ -33,7 +33,6 @@
 }
 .display_statistic_chart{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
     grid-area: amount_chart;
@@ -48,16 +47,15 @@
     border-radius: 5px;
     box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
     align-items: center;
+    padding: 1rem;
 }
-.outer_box_control_btn{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    overflow: hidden;
+
+.MuiButtonBase-root .addexpense{
+    margin: 1rem;
 }
 
 .btn_img{
@@ -66,9 +64,7 @@
     width: 8rem;
     margin: 0px;
 }
-.control_btn_img{
-    width: 50%;
-}
+
 .information_card{
     grid-area: info_card;
 }
@@ -91,7 +87,6 @@
     height: 20px;
 }
 .item_card{
-    background-color: aqua;
 }
 
 .money_img{
@@ -108,24 +103,7 @@
     font-family: 'Varela Round'
 }
 
-#accordion{
-    
-}
-#accordion_back{
-    
-}
-#accordion_give{
-    
-}
-.accordion_summary{
-    
-}
-.accordion_back_summary{
-    
-}
-.accordion_give_summary{
-    
-}
+
 .drawer_footer{
     position: sticky;
     bottom:0;
@@ -184,8 +162,7 @@
     .outer_box_control_btn{
         display: flex;
         justify-content: space-evenly;
-        flex-wrap: nowrap;
-        width: 50%;
+        align-items: center;
     }
     
 }

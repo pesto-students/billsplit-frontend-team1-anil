@@ -1,19 +1,23 @@
-import React from 'react'
-import Card from '@material-ui/core/Card';
+import React,{useEffect,useState} from 'react'
 import classes from './TransactionCard.css';
 
 function TransactionCard() {
+  const [data,setData] = useState();
+  const getData = async(e)=>{
+    return await fetch("/transactions",{
+      method:"GET"
+    }).then((res)=>res.json())
+    .then((json)=>{setData(json)});
+  }
+  useEffect(()=>{
+    getData()
+  },[]);
+
   return (
     <div className={classes.transaction_container}>
-        <Card>Here comes the search bar</Card>
-        <Card>Here the table of transaction</Card>
-        <Card>Here the table of transaction</Card>
-
-        <Card>Here the table of transaction</Card>
-        <Card>Here the table of transaction</Card>
-        <Card>Here the table of transaction</Card>
-        <Card>Here the table of transaction</Card>
-
+        {/* {data.map((ele)=>(
+          <div>{ele.description}</div>
+        ))} */}
     </div>
   )
 }

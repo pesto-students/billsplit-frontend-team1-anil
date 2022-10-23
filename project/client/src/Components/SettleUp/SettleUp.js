@@ -37,7 +37,7 @@ export default function SettleUp() {
     const friend = "friend";
   return (
     <div>
-        <Button variant="contained" onClick={handleClickOpen} className={classes.btn}>Settle Up</Button>
+        <Button variant="contained" onClick={handleClickOpen} className={classes.btn}>-Settle</Button>
       <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
         <DialogTitle id="form-dialog-title" className="modal_nav nav__text">Settle Up</DialogTitle>
         <DialogContent style={{width:'400px',height:'300px'}}>
