@@ -19,7 +19,7 @@ Here comes BillSplit in the picture to solve all the problems related to sharing
 
 # Demo
 
-[Live Demo](https:/)
+[Live Demo](https://billsplit-finance.netlify.app/)
 
 <br/>
 
@@ -27,7 +27,6 @@ Here comes BillSplit in the picture to solve all the problems related to sharing
 <br/>
 Test Credentials:
 
-- For Admin
   - Email: pestoproject@gmail.com
   - Password:1111111
 
@@ -65,10 +64,6 @@ We attempted to employ an entirely contemporary tech stack while experimenting w
 ## Databases
 - [MongoDb](https://www.mongodb.com/)
 
-## Testing
-* [Jest](https://jestjs.io/) 
-
-
 <br/>
 
 # Authors
@@ -79,3 +74,6 @@ We attempted to employ an entirely contemporary tech stack while experimenting w
 
 <br/>
 
+# Licence
+
+Distributed under the MIT License.
