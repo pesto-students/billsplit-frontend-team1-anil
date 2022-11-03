@@ -68,7 +68,7 @@ We attempted to employ an entirely contemporary tech stack while experimenting w
 
 # Authors
 
-- [Aditya](https://github.com)
+- [Aditya](https://github.com/aditya226369)
 - [Yogesh](https://github.com/yograi343)
 - [Saloni](https://github.com)
 
