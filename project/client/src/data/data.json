@@ -1,0 +1,16 @@
+[{
+    "question": "How do I use BillSplit?",
+    "answer": "BillSplit is an app for splitting expenses with your friends. It lets you and your friends add various bills and keep track of who owes who, and then it helps you to settle up with each other. \nHere's a quick overview of how it works.\nFirst, sign up for an account!\nNext, create a group. \nOnce you've created your group, you and your friends can all start adding expenses! Go to your group, then hit the 'Add bill' button. You'll be asked for various details about your expense, like the total cost, who paid, and how much each person should owe. As soon as you hit 'Save', BillSplit will update everyone's balances to keep track of how much each person owes.\nLater, after you've added a bunch of expenses, you'll probably want to settle up with your friends. Just hit the 'Settle up' button to pay back your friend. You can record a cash payment (e.g. you just handed your friend some cash."
+
+},
+{
+    "question": "How do I join an existing group?",
+    "answer": "You can't join a group on your own – you'll need a current member of the group to invite you. Ask that person to go to the group's settings page and add you under the 'Group members' section."
+
+},
+{
+    "question": "What does the 'simplify debts' setting do?",
+    "answer": "Debt simplification (a.k.a. 'simplify debts' or 'debt shuffling') is a feature of BillSplit that restructures debt within a groups and across friendships. It does not change the total amount that anyone owes, but it makes it easier to pay people back by minimizing the total number of payments.\nFor example: say Anna, Bob, and Charlie share an apartment. Anna owes Bob $20, and Bob owes Charlie $20. Rather than making two separate payments, BillSplit would tell Anna to pay $20 to Charlie directly, minimizing the number of total payments. This ensures that people are paid back more quickly and efficiently."
+
+}
+]
