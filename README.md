@@ -1,5 +1,4 @@
-# Bingeflix
-[![Netlify Status](https://)](https:/)
+# BillSplit
 <br/>
 # Table of Contents
 
