@@ -1,4 +1,4 @@
-# BillSplit
+# [BillSplit](https://billsplit-finance.netlify.app/)
 <br/>
 # Table of Contents
 
