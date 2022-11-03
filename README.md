@@ -28,8 +28,8 @@ Here comes BillSplit in the picture to solve all the problems related to sharing
 Test Credentials:
 
 - For Admin
-  - Email:
-  - Password:
+  - Email: pestoproject@gmail.com
+  - Password:1111111
 
 <br/>
 
