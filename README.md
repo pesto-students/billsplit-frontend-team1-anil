@@ -1,5 +1,5 @@
 
-<img src="https://github.com/billsplit-finance/frontend/blob/main/src/Img/while_black.png" width="200px" href="https://billsplit-finance.netlify.app/" borderColor="blue">
+<a  href="https://billsplit-finance.netlify.app/" ><img src="https://github.com/billsplit-finance/frontend/blob/main/src/Img/while_black.png" width="200px"></a>
 
 # Table of Contents
 
